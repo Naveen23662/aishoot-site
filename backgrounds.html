@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIShoot – Backgrounds &amp; Props</title>
+  <meta name="description" content="Browse our curated collection of AI‑generated backgrounds and props. Filter by category and preview how your outfit pops against different scenes.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yH06P2iVHccD88CxKSIYjXehcA6HBCVbWSVgQMhlg+eZKZam97tgNfmqX2oV/dD8tPU3SO+t0tJXa0yqRy6bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">AIShoot</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="models.html">Models</a></li>
+      <li><a href="backgrounds.html" class="active">Backgrounds</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image:url('assets/classic.png')">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Backgrounds &amp; Props</h1>
+      <p>Choose from curated themes to set the perfect stage for your outfits. Click to preview and envision your final shot.</p>
+    </div>
+  </section>
+
+  <!-- Background Gallery Section -->
+  <section class="background-gallery">
+    <div class="filter-buttons">
+      <button class="filter" data-category="all">All</button>
+      <button class="filter" data-category="classic">Classic</button>
+      <button class="filter" data-category="traditional">Traditional</button>
+      <button class="filter" data-category="contemporary">Contemporary</button>
+      <button class="filter" data-category="outdoor">Outdoor</button>
+    </div>
+
+    <!-- Preview area -->
+    <div class="preview-section">
+      <div class="preview" id="bg-preview">
+        <!-- Product overlay image -->
+        <img src="assets/saree_compressed.jpg" alt="Outfit preview on selected background">
+      </div>
+    </div>
+
+    <!-- Grid of backgrounds -->
+    <div class="background-grid">
+      <div class="background-card classic" data-image="assets/classic.png">
+        <img src="assets/classic.png" alt="Classic studio background">
+        <span class="label">Classic Studio</span>
+      </div>
+      <div class="background-card traditional" data-image="assets/traditional-theme.png">
+        <img src="assets/traditional-theme.png" alt="Traditional courtyard background">
+        <span class="label">Traditional</span>
+      </div>
+      <div class="background-card contemporary" data-image="assets/contemporary-theme.png">
+        <img src="assets/contemporary-theme.png" alt="Contemporary living room background">
+        <span class="label">Contemporary</span>
+      </div>
+      <div class="background-card outdoor" data-image="assets/outdoor-theme.png">
+        <img src="assets/outdoor-theme.png" alt="Outdoor garden background">
+        <span class="label">Outdoor</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 AIShoot. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIShoot – Model &amp; Pose Simulation</title>
+  <meta name="description" content="Experiment with virtual models and poses. Change skin tone, hairstyle and select different poses to visualise outfits in realistic scenarios.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yH06P2iVHccD88CxKSIYjXehcA6HBCVbWSVgQMhlg+eZKZam97tgNfmqX2oV/dD8tPU3SO+t0tJXa0yqRy6bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">AIShoot</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="models.html" class="active">Models</a></li>
+      <li><a href="backgrounds.html">Backgrounds</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image:url('assets/ar_hologram.png')">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Model &amp; Pose Simulation</h1>
+      <p>Visualise how your outfits look on different virtual models and explore multiple poses.</p>
+    </div>
+  </section>
+
+  <!-- Model Selector Section -->
+  <section class="model-section">
+    <div class="control-panel">
+      <h2>Choose Skin Tone</h2>
+      <div class="choices skin">
+        <!-- Each skin tone references a separate model image. When selected the pose images update to this source. -->
+        <button class="skin-choice" data-image="assets/bd538ea0-2198-4bea-b5ef-7b6cc3c7225e.jpg" style="background-color:#f5d7c4" title="Light"></button>
+        <button class="skin-choice" data-image="assets/03c2f40b-482b-4496-a06c-9fe872139451.jpg" style="background-color:#d3a173" title="Medium"></button>
+        <button class="skin-choice" data-image="assets/0702c5c7-724c-4389-b509-03750f229b76.jpg" style="background-color:#603813" title="Deep"></button>
+        <!-- Mannequin option for budget-friendly display -->
+        <button class="skin-choice" data-image="assets/mannequin1.jpg" style="background-color:#ccc" title="Mannequin"></button>
+      </div>
+      <h2>Choose Pose</h2>
+      <div class="choices pose">
+        <button class="pose-choice" data-pose="pose-standing" aria-label="Standing pose"><i class="fa-solid fa-person-standing"></i></button>
+        <button class="pose-choice" data-pose="pose-walking" aria-label="Walking pose"><i class="fa-solid fa-person-walking"></i></button>
+        <button class="pose-choice" data-pose="pose-profile" aria-label="Side profile"><i class="fa-solid fa-person-walking-with-cane"></i></button>
+      </div>
+    </div>
+    <div class="model-display">
+      <!-- Each pose is represented by the same image styled differently.  -->
+      <!-- Set default source to light tone; script will update on skin selection -->
+      <img id="pose-standing" class="pose-img" src="assets/bd538ea0-2198-4bea-b5ef-7b6cc3c7225e.jpg" alt="Standing pose">
+      <img id="pose-walking" class="pose-img" src="assets/bd538ea0-2198-4bea-b5ef-7b6cc3c7225e.jpg" alt="Walking pose" style="transform: translateX(-5%) scale(1.05);">
+      <img id="pose-profile" class="pose-img" src="assets/bd538ea0-2198-4bea-b5ef-7b6cc3c7225e.jpg" alt="Side profile pose" style="transform: scaleX(-1);">
+    </div>
+  </section>
+
+  <!-- Information Section -->
+  <section class="model-info">
+    <h2>Make It Personal</h2>
+    <p>Our virtual model selector lets you experiment with a variety of skin tones, hairstyles and poses to find the perfect match for your brand. Whether you need a confident walk down a ramp or a delicate twirl, AIShoot renders it seamlessly. Use the AR try‑on feature to see the outfit on yourself right from your phone.</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 AIShoot. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

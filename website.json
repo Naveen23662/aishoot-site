@@ -1,0 +1,10 @@
+{
+  "name": "AIShoot",
+  "pages": [
+    { "name": "Home", "path": "index.html" },
+    { "name": "Features", "path": "features.html" },
+    { "name": "Models", "path": "models.html" },
+    { "name": "Backgrounds & Props", "path": "backgrounds.html" },
+    { "name": "Pricing & Contact", "path": "contact.html" }
+  ]
+}

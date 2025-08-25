@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIShoot – Pricing &amp; Contact</title>
+  <meta name="description" content="Choose a plan that fits your needs and get in touch for customised solutions. AIShoot empowers boutiques of every size with flexible pricing and friendly support.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yH06P2iVHccD88CxKSIYjXehcA6HBCVbWSVgQMhlg+eZKZam97tgNfmqX2oV/dD8tPU3SO+t0tJXa0yqRy6bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">AIShoot</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="models.html">Models</a></li>
+      <li><a href="backgrounds.html">Backgrounds</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image:url('assets/contemporary-theme.png')">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Plans &amp; Contact</h1>
+      <p>Choose a plan tailored to your needs and reach out for personalised packages.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <div class="pricing-card">
+      <h2>Starter</h2>
+      <p class="price">₹2,999<span style="font-size:0.8rem; font-weight:400">/month</span></p>
+      <ul>
+        <li>Up to 100 photos per month</li>
+        <li>3 background themes</li>
+        <li>2 virtual models</li>
+        <li>Email support</li>
+      </ul>
+      <button class="select-plan" aria-label="Select Starter Plan">Select</button>
+    </div>
+    <div class="pricing-card" style="border:3px solid var(--color-primary);">
+      <h2>Professional</h2>
+      <p class="price">₹6,999<span style="font-size:0.8rem; font-weight:400">/month</span></p>
+      <ul>
+        <li>Up to 500 photos per month</li>
+        <li>Unlimited backgrounds &amp; props</li>
+        <li>5 virtual models</li>
+        <li>Video mode &amp; captions</li>
+      </ul>
+      <button class="select-plan" aria-label="Select Professional Plan">Select</button>
+    </div>
+    <div class="pricing-card">
+      <h2>Enterprise</h2>
+      <p class="price">Custom</p>
+      <ul>
+        <li>Unlimited photos</li>
+        <li>Dedicated 3D prop library</li>
+        <li>Team collaboration tools</li>
+        <li>Priority support &amp; onboarding</li>
+      </ul>
+      <button class="select-plan" aria-label="Contact for Enterprise Plan">Contact Us</button>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <h2>Get In Touch</h2>
+    <p>Have questions or need a custom solution? Send us a message and our team will be happy to assist you.</p>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="contact-success" class="hidden">Thank you! Your message has been sent.</div>
+    <div class="contact-details">
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-envelope"></i> support@aishoot.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Mahbubnagar, Telangana, India</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 AIShoot. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIShoot – AI‑Powered Product Photography</title>
+  <meta name="description" content="AIShoot empowers boutique owners and designers to transform raw outfit photos into stunning visuals ready for e‑commerce, social media and catalogs.">
+  <meta name="keywords" content="AIShoot, AI photography, saree, lehenga, boutique, fashion, product photography, AR try‑on">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yH06P2iVHccD88CxKSIYjXehcA6HBCVbWSVgQMhlg+eZKZam97tgNfmqX2oV/dD8tPU3SO+t0tJXa0yqRy6bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">AIShoot</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="models.html">Models</a></li>
+      <li><a href="backgrounds.html">Backgrounds</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Upload Hero Section -->
+  <section class="hero-upload">
+    <div class="container">
+      <h1>AIShoot – Transform Product Photos with AI</h1>
+      <p>Upload raw outfit images. Get clean, styled, high‑quality visuals in minutes.</p>
+      <!-- File upload form (placeholder) -->
+      <form id="upload-form" onsubmit="return false;">
+        <input type="file" id="upload-input" accept="image/*" hidden>
+        <button type="button" class="upload-btn" onclick="document.getElementById('upload-input').click()">Upload Picture</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>To give every boutique and designer the power of premium photoshoots without needing expensive models, studios or photographers. AIShoot delivers professional product photos in minutes, not days.</p>
+    <div class="cards">
+      <div class="card">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h3>Smart Automation</h3>
+        <p>Auto outfit detection, background suggestions & batch processing.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-person-dress"></i>
+        <h3>Model Simulation</h3>
+        <p>Virtual models with various skin tones, hairstyles & poses.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-panorama"></i>
+        <h3>Backgrounds & Props</h3>
+        <p>Categorized themes, seasonal settings & 3D props.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-film"></i>
+        <h3>Advanced Add‑Ons</h3>
+        <p>Video mode, captions, voiceover & collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why AIShoot Section -->
+  <section class="why-section">
+    <h2>Why AIShoot?</h2>
+    <div class="why-cards">
+      <div class="why-card">
+        <i class="fa-solid fa-scissors"></i>
+        <h3>Remove Backgrounds</h3>
+        <p>Clean cutouts, ready for any backdrop.</p>
+      </div>
+      <div class="why-card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Add Realistic Lighting</h3>
+        <p>AI adds natural shadows &amp; studio feel.</p>
+      </div>
+      <div class="why-card">
+        <i class="fa-solid fa-person-circle-check"></i>
+        <h3>Model Overlays</h3>
+        <p>See outfits on professional models.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-section">
+    <h2>How It Works</h2>
+    <div class="how-steps">
+      <div class="step">
+        <i class="fa-solid fa-upload"></i>
+        <h3>Upload Outfit Photo</h3>
+        <p>Just click &amp; drop raw images from your phone or system.</p>
+      </div>
+      <div class="step">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h3>Let AI Style It</h3>
+        <p>Our tech adds perfect lighting &amp; matching background.</p>
+      </div>
+      <div class="step">
+        <i class="fa-solid fa-download"></i>
+        <h3>Download HD Visuals</h3>
+        <p>Get polished images, ready for your website, social media or catalog.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AIShoot Difference Section -->
+  <section class="difference-section">
+    <h2>See the AIShoot Difference</h2>
+    <div class="difference-grid">
+      <div class="difference-card">
+        <img src="assets/saree_compressed.jpg" alt="Raw outfit photo">
+        <p>Raw Photo</p>
+      </div>
+      <div class="difference-card">
+        <img src="assets/bd538ea0-2198-4bea-b5ef-7b6cc3c7225e.jpg" alt="Enhanced outfit photo">
+        <p>AIShoot Enhanced</p>
+      </div>
+      <div class="difference-card">
+        <img src="assets/0702c5c7-724c-4389-b509-03750f229b76.jpg" alt="Model overlay photo">
+        <p>Model Overlay</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before & After Slider Section -->
+  <section class="slider-demo">
+    <h2>Before & After</h2>
+    <p>See how AIShoot enhances your product photos.</p>
+    <div class="slider-container">
+      <!-- Enhanced photo -->
+      <img src="assets/saree_compressed.jpg" alt="Enhanced product photo">
+      <!-- Raw photo overlay; grayscale filter gives the illusion of a raw shot -->
+      <div class="overlay-img">
+        <img src="assets/saree_compressed.jpg" alt="Raw product photo" style="filter: grayscale(100%)">
+      </div>
+    </div>
+    <input type="range" id="slider-range" min="0" max="100" value="50" aria-label="Reveal slider">
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 AIShoot. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
